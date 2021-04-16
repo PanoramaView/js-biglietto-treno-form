@@ -1,0 +1,23 @@
+body{
+    background-color: #B91450;
+    color: white;
+}
+.margini{
+    margin: 10px 100px 50px 100px;
+}
+.bg-white{
+    background-color: white;
+}
+.red-text{
+    color: #B91450;
+}
+form{
+    color: black;
+}
+.bordi{
+    border: solid 1px black;
+    border-right: none;
+}
+.paddingform{
+    padding: 10px 50px;
+}

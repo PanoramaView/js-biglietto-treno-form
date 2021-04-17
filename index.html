@@ -21,25 +21,55 @@
     <body>
         <div class="margini">
             <h1 class="text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-        <div class="bg-white red-text paddingform">
+        <div class="bg-white red-text paddingform boxshadow">
             <form id="formDati" class="text-center">
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Nome Cognome</label>
-                    <input type="text" class="form-control" id="" name="namesur" placeholder="Nome Cognome">
+                <div class="box1">
+                    <div class="form-group">
+                        <label for="namesur">Nome Cognome</label>
+                        <input type="text" class="myform form-control" id="namesur" name="namesur" placeholder="Nome Cognome">
+                    </div>
+                    <div class="form-group">
+                        <label for="namesur">Km da percorrere</label>
+                        <input type="text" class="myform form-control" id="km" name="km" placeholder="Km da percorrere">
+                    </div>
+                    <div class="form-group">
+                        <label for="namesur">Fascia d'età</label>
+                        <input type="text" class="myform form-control" id="age" name="age" placeholder="Fascia d'età">
+                    </div>
                 </div>
-                <input type="text" name="namesur" id="" value="" placeholder="Nome Cognome">
-                <input type="text" name="km" id="" value="" placeholder="Km da percorrere">
-                <input type="text" name="age" id="" value="" placeholder="Fascia d'età">
 
                 <button type="submit">Genera</button>
                 <button type="reset">Annulla</button>
             </form>
         </div>
         <h1 class="text-center">IL TUO BIGLIETTO</h1>
-        <div class="bg-white red-text paddingtable">
-            <h3>DETTAGLIO PASSENGERI</h3>
-            <div class="bordi">
-                
+        <div class="bg-white red-text paddingtable boxshadow paddingbiglietto">
+            <div class="box2">
+                <h3>DETTAGLIO PASSEGGERI</h3>
+            <main class="bordi">
+                <aside class="bg-grey border">
+                    <div class="mylabel">NOME PASSEGGERO</div>
+                    <div id="passeggero"> - </div>
+                </aside>
+                <section class="">
+                    <div class="box3 ">
+                        <div class="mylabel">Offerta</div>
+                        <div id="offerta">-</div>
+                    </div>
+                    <div class="box3">
+                        <div class="mylabel">Carrozza</div>
+                        <div id="carrozza">-</div>
+                    </div>
+                    <div class="box3">
+                        <div class="mylabel">Codice CP</div>
+                        <div id="cp">-</div>
+                    </div>
+                    <div class="box3">
+                        <div class="mylabel">Costo biglietto</div>
+                        <div id="prezzo">-</div>
+                    </div>
+                </section>
+            </main>
             </div>
         </div>
         </div>

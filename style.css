@@ -8,6 +8,9 @@ body{
 .bg-white{
     background-color: white;
 }
+.bg-grey{
+    background-color: #808080;
+}
 .red-text{
     color: #B91450;
 }
@@ -19,5 +22,57 @@ form{
     border-right: none;
 }
 .paddingform{
-    padding: 10px 50px;
+    padding: 20px 40px;
+    border-radius: 15px;
+    
+}
+.paddingbiglietto{
+    padding: 20px;
+}
+.box1{
+    overflow: hidden;
+}
+.box1 > div{
+    display: inline-block;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+button{
+    margin: 0 10px;
+    color: #B91450;
+    font-weight: 900;
+    font-size: 16px;
+}
+label{
+    color: #B91450;
+}
+.myform{
+    border: solid 1px #B91450;
+}
+.boxshadow{
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 20px 5px rgba(0,0,0,0.3); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 20px 5px rgba(0,0,0,0.3);
+}
+.box2 *{
+    color: black;
+    font-weight:600;
+}
+main{
+    display: flex;
+}
+section{
+    display: flex;
+    flex-grow: 1;
+}
+.box3{
+    display: flex;
+    flex-direction: column;
+    flex-grow:1;
+    padding: 10px;
+}
+.mylabel{
+    margin-bottom: 30px;
+}
+aside{
+    padding: 20px;
 }

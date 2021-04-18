@@ -42,6 +42,8 @@ button{
     color: #B91450;
     font-weight: 900;
     font-size: 16px;
+    background-color: #CCCCCC;
+    border-radius: 4px;
 }
 label{
     color: #B91450;
@@ -59,6 +61,7 @@ label{
 }
 main{
     display: flex;
+    font-size: 16px;
 }
 section{
     display: flex;
@@ -69,9 +72,11 @@ section{
     flex-direction: column;
     flex-grow:1;
     padding: 10px;
+    flex-shrink: 1;
 }
 .mylabel{
     margin-bottom: 30px;
+    font-size: 20px;
 }
 aside{
     padding: 20px;

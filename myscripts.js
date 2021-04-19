@@ -1,11 +1,21 @@
 window.addEventListener("load", function () {
     script();
 })
+function appear(){
+    var b = document.getElementById("biglietto");
+    b.style.display = "block";
+    
+}
+function disappear(){
+    var b = document.getElementById("biglietto");
+    b.style.display = "none";
+}
 function script() {
+    //get html element in the output
     var formDati = document.getElementById("formDati");
     var passeggero = document.getElementById("passeggero");
-    var km = document.getElementById("km");
-    var age = document.getElementById("age");
+    // var km = document.getElementById("km");
+    // var age = document.getElementById("age");
     var offertahtml = document.getElementById("offerta");
     var carrozzahtml = document.getElementById("carrozza");
     var cphtml = document.getElementById("cp");
@@ -14,15 +24,17 @@ function script() {
     formDati.addEventListener("submit", function (event) {
         event.preventDefault(); //impedisce il refresh del sito
         console.log("Form has been submitted.")
+
+        //get html element input
         var form = event.currentTarget;
         var formElements = form.elements;
-
         var namesur = formElements.namesur.value;
         // uguale a :
         // var nomeElement = document.querySelector("[name= 'nome']")
         // var nome = nomeElement.value;
         var age = formElements.age.value;
         var kms = formElements.km.value;
+
         var carrozza = "";
 
         //generate not existing number
@@ -33,7 +45,7 @@ function script() {
         if (codiceList.length < 1) {
             while (checkcodice === false) {
                 var codice = Math.floor(Math.random() * 9999) + 90000;
-                
+
                 console.log("Codice: " + codice);
                 for (var i = 0; i < checkcodice.length; i++) {
                     if (codiceList[i] === codice) {
@@ -60,13 +72,13 @@ function script() {
 
         //prezzo
         var prezzo = kms * 0.5;
-        if(age === "Anziano"){
+        if (age === "Anziano") {
             prezzo = prezzo * 0.8;
         }
-        if(age ==="Minorenne"){
+        if (age === "Minorenne") {
             prezzo = prezzo * 0.7;
         }
-        
+
 
         //output
         passeggero.innerHTML = namesur;

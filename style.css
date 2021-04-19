@@ -81,3 +81,6 @@ section{
 aside{
     padding: 20px;
 }
+#biglietto{
+    display: none;
+}
